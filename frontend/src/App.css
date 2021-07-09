@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+#usuariosinlogear {
+  position: absolute;
+  width: 1920px;
+  height: 3959px;
+  background-color: rgba(28,47,64,1);
+  overflow: hidden;
+  --web-view-name: usuariosinlogear;
+  --web-view-id: usuariosinlogear;
+  --web-scale-on-resize: true;
+  --web-enable-deep-linking: true;
+}

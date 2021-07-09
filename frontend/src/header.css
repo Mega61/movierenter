@@ -1,0 +1,140 @@
+#header {
+    fill: rgba(81,99,115,1);
+}
+.header {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+}
+#Logopagina {
+    position: absolute;
+    width: 247px;
+    height: 93px;
+    left: 26px;
+    top: 8px;
+    overflow: visible;
+}
+#Movie {
+    left: 40px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 184px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    color: rgba(179,176,191,1);
+    letter-spacing: 1.43px;
+}
+#Renter {
+    left: 123px;
+    top: 41px;
+    position: absolute;
+    overflow: visible;
+    width: 125px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Harlow Solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 41px;
+    color: rgba(4,191,173,1);
+    letter-spacing: 0.21px;
+}
+#Icon_material-movie {
+    fill: rgba(40,66,89,1);
+}
+.Icon_material-movie {
+    filter: drop-shadow(-6px 0px 4px rgba(0, 0, 0, 0.161));
+    overflow: visible;
+    position: absolute;
+    width: 116.22px;
+    height: 95.376px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#categoria {
+    position: absolute;
+    width: 174px;
+    height: 52px;
+    left: 1389px;
+    top: 24px;
+    overflow: visible;
+    background-color: transparent;
+}
+#categoria:hover{
+    background-color: aqua;
+}
+#categoria_gs {
+    position: absolute;
+    width: 174px;
+    height: 52px;
+    left: 1593px;
+    top: 24px;
+    overflow: visible;
+    background-color: transparent;
+}
+#categoria_gs:hover{
+    background-color: aqua;
+}
+#Rectngulo_10 {
+    fill: rgba(179,176,191,1);
+}
+.Rectngulo_10 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 192px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+}
+#Login {
+    left: 44px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 87px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(40,66,89,1);
+    letter-spacing: 1.43px;
+}
+#Rectngulo_10_gt {
+    fill: rgba(179,176,191,1);
+}
+.Rectngulo_10_gt {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 192px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+}
+#SignUp {
+    left: 33px;
+    top: 11px;
+    position: absolute;
+    overflow: visible;
+    width: 109px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(40,66,89,1);
+    letter-spacing: 1.43px;
+}

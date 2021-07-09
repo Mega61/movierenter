@@ -1,0 +1,110 @@
+#carrusel {
+    position: absolute;
+    width: 1920px;
+    height: 348px;
+    left: 0px;
+    top: 110px;
+    overflow: visible;
+}
+#Grupo_2 {
+    position: absolute;
+    width: 399px;
+    height: 1px;
+    left: 761px;
+    top: 330px;
+    overflow: visible;
+}
+#Lnea_1 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Lnea_1 {
+    overflow: visible;
+    position: absolute;
+    width: 127.5px;
+    height: 5px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Lnea_2 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Lnea_2 {
+    overflow: visible;
+    position: absolute;
+    width: 127.5px;
+    height: 5px;
+    left: 138.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Lnea_3 {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Lnea_3 {
+    overflow: visible;
+    position: absolute;
+    width: 127.5px;
+    height: 5px;
+    left: 276.5px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Mira_las_ultimas_tendencias {
+    left: 66px;
+    top: 31px;
+    position: absolute;
+    overflow: visible;
+    width: 509px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 39px;
+    color: rgba(81,99,115,1);
+}
+
+#subheader {
+    fill: rgba(81,99,115,1);
+}
+.subheader {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 400px;
+}
+#Te_recomendamos_estas_pelculas {
+    left: 140px;
+    top: 630px;
+    position: absolute;
+    overflow: visible;
+    width: 479px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(179,176,191,1);
+}

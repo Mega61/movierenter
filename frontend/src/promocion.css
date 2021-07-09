@@ -1,0 +1,36 @@
+#promocion {
+    position: absolute;
+    width: 1920px;
+    height: 688px;
+    left: 0px;
+    top: 700px;
+    overflow: visible;
+}
+#Rectngulo_9 {
+    fill: rgba(81,99,115,1);
+}
+.Rectngulo_9 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 688px;
+    left: 0px;
+    top: 0px;
+}
+#PROMOCIN {
+    transform: translate(0px, -543px) matrix(1,0,0,1,-251.5,832.5) rotate(270deg);
+    transform-origin: center;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 675px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    color: rgba(28,47,64,1);
+    letter-spacing: 1.43px;
+}
