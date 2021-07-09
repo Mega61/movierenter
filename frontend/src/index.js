@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Auth0Provider } from '@auth0/auth0-react'
+import { Router, hashHistory as history } from 'react-router-dom';
+
+//import routes from './route'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Auth0Provider domain="dev-s3xla1yp.us.auth0.com" clientId="zfnH2vBBP9lkBpNzT5UkMV34kJl4W9ZH" redirectUri={window.location.origin}>
+      <App />
+    </Auth0Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

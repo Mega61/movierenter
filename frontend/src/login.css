@@ -1,0 +1,271 @@
+#Login {
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(28,47,64,1);
+    overflow: hidden;
+    --web-view-name: Login;
+    --web-view-id: Login;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#ContenedorLogin {
+    position: absolute;
+    width: 653px;
+    height: 846px;
+    left: 634px;
+    top: 75px;
+    overflow: visible;
+}
+#Rectngulo_12 {
+    fill: rgba(81,99,115,1);
+    stroke: rgba(179,176,191,1);
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectngulo_12 {
+    position: absolute;
+    overflow: visible;
+    width: 663px;
+    height: 95px;
+    left: 0px;
+    top: 0px;
+}
+#Rectngulo_11 {
+    fill: rgba(40,66,89,1);
+    stroke: rgba(179,176,191,1);
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectngulo_11 {
+    position: absolute;
+    overflow: visible;
+    width: 663px;
+    height: 771px;
+    left: 0px;
+    top: 85px;
+}
+#grupoRegister {
+    position: absolute;
+    width: 176px;
+    height: 16px;
+    left: 737px;
+    top: 640px;
+    overflow: visible;
+}
+#No_tienes_cuenta {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 94px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(179,176,191,1);
+}
+#Registrate {
+    left: 107px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(179,176,191,1);
+}
+#botonLogin {
+    position: absolute;
+    width: 122px;
+    height: 37px;
+    left: 899px;
+    top: 569px;
+    overflow: visible;
+}
+#rectaLogin {
+    fill: rgba(77,196,134,1);
+}
+.rectaLogin {
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 122px;
+    height: 39px;
+    left: 0px;
+    top: 1px;
+}
+#Login_r {
+    left: 24px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 76px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(40,66,89,1);
+}
+#InputContra {
+    position: absolute;
+    width: 446px;
+    height: 45px;
+    left: 737px;
+    top: 501px;
+    overflow: visible;
+}
+#rectaContra {
+    fill: rgba(179,176,191,1);
+}
+.rectaContra {
+    position: absolute;
+    overflow: visible;
+    width: 446px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+}
+#Contrasea {
+    left: 26px;
+    top: 5px;
+    position: absolute;
+    overflow: visible;
+    width: 158px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(40,66,89,1);
+}
+#InputCorreo {
+    position: absolute;
+    width: 446px;
+    height: 45px;
+    left: 737px;
+    top: 428px;
+    overflow: visible;
+}
+#rectaCorreo {
+    fill: rgba(179,176,191,1);
+}
+.rectaCorreo {
+    position: absolute;
+    overflow: visible;
+    width: 446px;
+    height: 45px;
+    left: 0px;
+    top: 0px;
+}
+#Correo {
+    left: 26px;
+    top: 5px;
+    position: absolute;
+    overflow: visible;
+    width: 92px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(40,66,89,1);
+}
+#iconoPersona {
+    position: absolute;
+    width: 159px;
+    height: 159px;
+    left: 881px;
+    top: 246px;
+    overflow: visible;
+}
+#Elipse_1 {
+    fill: rgba(179,176,191,1);
+}
+.Elipse_1 {
+    position: absolute;
+    overflow: visible;
+    width: 159px;
+    height: 159px;
+    left: 0px;
+    top: 0px;
+}
+#Icon_ionic-md-person {
+    fill: rgba(40,66,89,1);
+}
+.Icon_ionic-md-person {
+    overflow: visible;
+    position: absolute;
+    width: 100.023px;
+    height: 100.023px;
+    left: 29.979px;
+    top: 25.881px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Logopagina {
+    position: absolute;
+    width: 159.243px;
+    height: 59.334px;
+    left: 880.757px;
+    top: 87.666px;
+    overflow: visible;
+}
+#Icon_material-movie {
+    fill: rgba(40,66,89,1);
+}
+.Icon_material-movie {
+    filter: drop-shadow(-6px 0px 4px rgba(0, 0, 0, 0.161));
+    overflow: visible;
+    position: absolute;
+    width: 79.614px;
+    height: 66.091px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Movie {
+    left: 26.243px;
+    top: 7.334px;
+    position: absolute;
+    overflow: visible;
+    width: 120px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: rgba(179,176,191,1);
+    letter-spacing: 1.43px;
+}
+#Renter {
+    left: 80.243px;
+    top: 26.334px;
+    position: absolute;
+    overflow: visible;
+    width: 80px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Harlow Solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: rgba(4,191,173,1);
+    letter-spacing: 0.21px;
+}
