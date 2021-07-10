@@ -1,9 +1,9 @@
 package juandaza.movierenter.Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.IdClass;
 import javax.persistence.Table;
 import javax.persistence.Id;
 
@@ -12,20 +12,34 @@ import javax.persistence.Id;
 public class Cliente {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idclientes;
 
-    
+    @Column(name = "nombre")
     private String nombre;
+
+    @Column(name = "correo")
     private String correo;
+
+    @Column(name = "contrasegna")
     private String contrasegna;
 
+    public Cliente() {
+
+    }
+
+    public Cliente(String nombre, String correo, String contrasegna) {
+        this.nombre = nombre;
+        this.correo = correo;
+        this.contrasegna = contrasegna;
+    }
+
     public Long getId() {
-        return id;
+        return idclientes;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.idclientes = id;
     }
 
     public String getNombre() {

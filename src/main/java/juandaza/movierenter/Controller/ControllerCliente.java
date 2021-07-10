@@ -1,5 +1,7 @@
 package juandaza.movierenter.Controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,20 +11,35 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import juandaza.movierenter.Model.Cliente;
+import juandaza.movierenter.Model.Pelicula;
 import juandaza.movierenter.Repository.RepoCliente;
+import juandaza.movierenter.Repository.RepoPelicula;
 
 @RestController
-@RequestMapping(path = "/landing")
+@RequestMapping(path = "/api")
 public class ControllerCliente {
 
     @Autowired
-    private final RepoCliente repoCliente;
+    private RepoCliente repoCliente;
+
+    @Autowired
+    private RepoPelicula repoPelicula;
 
     public ControllerCliente(RepoCliente repoCliente) {
         this.repoCliente = repoCliente;
     }
 
-    @PostMapping(path = "/add")
+    @GetMapping("peliculas")
+    public List<Pelicula> gPeliculas(){
+        return this.repoPelicula.findAll();
+    }
+
+    @GetMapping("users")
+    public List<Cliente> getClientes(){
+        return this.repoCliente.findAll();
+    }
+
+    /*@PostMapping(path = "/add")
     public @ResponseBody String addCliente(@RequestParam String nombre, @RequestParam String correo,
             @RequestParam String contrasegna) {
 
