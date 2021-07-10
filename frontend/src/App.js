@@ -5,6 +5,7 @@ import Promocion from "./promocion";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import { Fragment } from "react";
+import MovieComponent from "./components/MovieComponent"
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Perfil />
       <Carrusel />
       <Promocion />
+      <MovieComponent/>
+      
     </div>
 
 

@@ -1,0 +1,130 @@
+#peliculaspromocion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 1534px;
+    height: 610px;
+    left: 193px;
+    top: 750px;
+    overflow: visible;
+}
+#Grupo_4 {
+    flex: 2;
+    position: relative;
+    width: 292px;
+    height: 610px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#Rectngulo_7 {
+    fill: rgba(40,66,89,1);
+}
+.Rectngulo_7 {
+    overflow: visible;
+    width: 292px;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+}
+#Rectngulo_4 {
+    fill: rgba(179,176,191,1);
+}
+.Rectngulo_4 {
+    position: absolute;
+    overflow: visible;
+    width: 292px;
+    height: 558px;
+    left: 0px;
+    top: 30px;
+}
+#Imagen_1 {
+    position: absolute;
+    width: 260px;
+    height: 390px;
+    left: 16px;
+    top: 35px;
+    overflow: visible;
+}
+#Lorem_ipsum_dolor_sit_amet_con {
+    left: 16px;
+    top: 492px;
+    position: absolute;
+    overflow: hidden;
+    width: 261px;
+    height: 74px;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(40,66,89,1);
+}
+#Rectngulo_5 {
+    fill: rgba(77,196,134,1);
+}
+.Rectngulo_5 {
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 122px;
+    height: 33px;
+    left: 85px;
+    top: 445px;
+}
+#ALQUILAR {
+    left: 106px;
+    top: 448px;
+    position: absolute;
+    overflow: visible;
+    width: 81px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(40,66,89,1);
+}
+#Rectngulo_6 {
+    fill: rgba(77,196,134,1);
+}
+.Rectngulo_6 {
+    position: absolute;
+    overflow: visible;
+    width: 292px;
+    height: 40px;
+    left: 0px;
+    top: 570px;
+}
+#ID16000_COP {
+    left: 83px;
+    top: 572px;
+    position: absolute;
+    overflow: visible;
+    width: 130px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: rgba(40,66,89,1);
+}
+#TITANIC {
+    left: 102px;
+    top: 4px;
+    position: absolute;
+    overflow: visible;
+    width: 89px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(179,176,191,1);
+    letter-spacing: 1.43px;
+}
