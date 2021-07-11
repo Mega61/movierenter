@@ -26,7 +26,7 @@ export const LoginButton = () => {
                     <span>Renter</span>
                 </div>
             </div>
-            <button id="categoria" onClick={loginWithRedirect}>
+            <button id="loginButtton" onClick={loginWithRedirect}>
                 <svg class="Rectngulo_10">
                     <rect id="Rectngulo_10" rx="16" ry="16" x="0" y="0" width="174" height="52">
                     </rect>

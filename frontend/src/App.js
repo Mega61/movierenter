@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import { Fragment } from "react";
 import MovieComponent from "./components/MovieComponent"
+import MovieBodyComponent from "./components/MovieBodyComponent";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Carrusel />
       <Promocion />
       <MovieComponent/>
+      <MovieBodyComponent/>
       
     </div>
 

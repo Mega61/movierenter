@@ -60,7 +60,7 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-#categoria {
+#loginButtton {
     position: absolute;
     width: 174px;
     height: 52px;
@@ -69,7 +69,7 @@
     overflow: visible;
     background-color: transparent;
 }
-#categoria:hover{
+#loginButtton:hover{
     background-color: aqua;
 }
 #categoria_gs {

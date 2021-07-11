@@ -32,6 +32,11 @@ public class ControllerCliente {
         this.repoPelicula = repoPelicula;
     }
 
+    @GetMapping("peliculasparciales")
+    public List<Pelicula> getFourPeliculas(){
+        return this.repoPelicula.findTopFour();
+    }
+
     @GetMapping("peliculas")
     public List<Pelicula> getPeliculas(){
         return this.repoPelicula.findAll();

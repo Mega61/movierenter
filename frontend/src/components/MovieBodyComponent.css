@@ -1,17 +1,17 @@
-#peliculaspromocion {
+#Cuadrcula_de_repeticin_1 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
     position: absolute;
     width: 1534px;
-    height: 610px;
+    height: 1900px;
     left: 193px;
-    top: 750px;
-    overflow: visible;
+    top: 1600px;
+    overflow: hidden;
 }
-#Grupo_4 {
-    flex: 2;
+#Grupo_11 {
+    flex: auto;
     position: relative;
     width: 292px;
     height: 610px;
@@ -19,20 +19,21 @@
     top: 0px;
     overflow: visible;
 }
-#Rectngulo_7 {
+#Rectngulo_7_ci {
     fill: rgba(40,66,89,1);
 }
-.Rectngulo_7 {
+.Rectngulo_7_ci {
+    position: absolute;
     overflow: visible;
     width: 292px;
     height: 56px;
     left: 0px;
     top: 0px;
 }
-#Rectngulo_4 {
+#Rectngulo_4_cj {
     fill: rgba(179,176,191,1);
 }
-.Rectngulo_4 {
+.Rectngulo_4_cj {
     position: absolute;
     overflow: visible;
     width: 292px;
@@ -40,7 +41,7 @@
     left: 0px;
     top: 30px;
 }
-#Imagen_1 {
+#Imagen_1_ck {
     position: absolute;
     width: 260px;
     height: 390px;
@@ -48,7 +49,7 @@
     top: 35px;
     overflow: visible;
 }
-#Lorem_ipsum_dolor_sit_amet_con {
+#Lorem_ipsum_dolor_sit_amet_con_cl {
     left: 16px;
     top: 492px;
     position: absolute;
@@ -62,10 +63,10 @@
     font-size: 15px;
     color: rgba(40,66,89,1);
 }
-#Rectngulo_5 {
+#Rectngulo_5_cm {
     fill: rgba(77,196,134,1);
 }
-.Rectngulo_5 {
+.Rectngulo_5_cm {
     filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.161));
     position: absolute;
     overflow: visible;
@@ -74,7 +75,7 @@
     left: 85px;
     top: 445px;
 }
-#ALQUILAR {
+#ALQUILAR_cn {
     left: 106px;
     top: 448px;
     position: absolute;
@@ -88,10 +89,10 @@
     font-size: 21px;
     color: rgba(40,66,89,1);
 }
-#Rectngulo_6 {
+#Rectngulo_6_co {
     fill: rgba(77,196,134,1);
 }
-.Rectngulo_6 {
+.Rectngulo_6_co {
     position: absolute;
     overflow: visible;
     width: 292px;
@@ -99,7 +100,7 @@
     left: 0px;
     top: 570px;
 }
-#ID16000_COP {
+#ID16000_COP_cp {
     left: 83px;
     top: 572px;
     position: absolute;
@@ -113,87 +114,18 @@
     font-size: 28px;
     color: rgba(40,66,89,1);
 }
-#TITANIC {
+#TITANIC_cq {
     left: 102px;
     top: 4px;
     position: absolute;
     overflow: visible;
     width: 89px;
     white-space: nowrap;
-    text-align: left;
+    text-align: center;
     font-family: Franklin Gothic;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     color: rgba(179,176,191,1);
     letter-spacing: 1.43px;
-}
-#categoria {
-    position: absolute;
-    width: 294px;
-    height: 52px;
-    left: 193px;
-    top: 1450px;
-    overflow: visible;
-}
-#Rectngulo_10 {
-    fill: rgba(179,176,191,1);
-}
-.Rectngulo_10 {
-    fill: rgba(179,176,191,1);
-    position: absolute;
-    overflow: visible;
-    width: 294px;
-    height: 52px;
-    left: 0px;
-    top: 0px;
-    text-align: center;
-    font-family: Franklin Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 27px;
-    color: rgba(40,66,89,1);
-    letter-spacing: 1.43px;
-    
-}
-#CATEGORIA_g {
-    left: 41px;
-    top: 10px;
-    position: absolute;
-    overflow: visible;
-    width: 177px;
-    white-space: nowrap;
-    text-align: center;
-    font-family: Franklin Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 27px;
-    color: rgba(40,66,89,1);
-    letter-spacing: 1.43px;
-}
-#Icon_ionic-ios-arrow-dropdown- {
-    fill: rgba(40,66,89,1);
-}
-.Icon_ionic-ios-arrow-dropdown- {
-    overflow: visible;
-    position: absolute;
-    width: 29.25px;
-    height: 29.25px;
-    left: 238.75px;
-    top: 11px;
-    transform: matrix(1,0,0,1,0,0);
-}
-#Elige_de_nuestro_catalogo {
-    left: 554px;
-    top: 1450px;
-    position: absolute;
-    overflow: visible;
-    width: 348px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Franklin Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 31px;
-    color: rgba(179,176,191,1);
 }
