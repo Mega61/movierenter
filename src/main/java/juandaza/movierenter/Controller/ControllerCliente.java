@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -45,6 +46,16 @@ public class ControllerCliente {
     @GetMapping("users")
     public List<Cliente> getClientes(){
         return this.repoCliente.findAll();
+    }
+
+    @PostMapping("users")
+    public Cliente crearCliente(@RequestBody Cliente elCliente){
+        return repoCliente.save(elCliente);
+    }
+
+    @PostMapping("inicioSesion")
+    public boolean iniciarSesion(@RequestBody String correo, @RequestBody String contrasegna){
+        return repoCliente.comprobarInicioSesion(correo, contrasegna);
     }
 
     /*@PostMapping(path = "/add")

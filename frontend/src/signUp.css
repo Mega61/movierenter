@@ -1,15 +1,15 @@
-#Login {
+#SignUp {
     position: absolute;
     width: 1920px;
     height: 1080px;
     background-color: rgba(28,47,64,1);
     overflow: hidden;
-    --web-view-name: Login;
-    --web-view-id: Login;
+    --web-view-name: SignUp;
+    --web-view-id: SignUp;
     --web-scale-on-resize: true;
     --web-enable-deep-linking: true;
 }
-#ContenedorLogin {
+#contenedorRegister {
     position: absolute;
     width: 653px;
     height: 846px;
@@ -51,69 +51,66 @@
     left: 0px;
     top: 85px;
 }
-#grupoRegister {
+#TerminosCondiciones {
     position: absolute;
-    width: 176px;
+    width: 192px;
     height: 16px;
-    left: 737px;
-    top: 640px;
+    left: 744px;
+    top: 628px;
     overflow: visible;
 }
-#No_tienes_cuenta {
-    left: 0px;
-    top: 0px;
+#CheckBox {
+    fill: rgba(179,176,191,1);
+}
+.CheckBox {
     position: absolute;
     overflow: visible;
-    width: 94px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Franklin Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(179,176,191,1);
-}
-#Registrate {
-    left: 130px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 70px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Franklin Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    color: rgba(179,176,191,1);
-}
-#botonLogin {
-    position: absolute;
-    width: 122px;
-    height: 37px;
-    left: 899px;
-    top: 569px;
-    overflow: visible;
-    background-color: transparent;
-}
-#rectaLogin {
-    fill: rgba(77,196,134,1);
-}
-.rectaLogin {
-    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.161));
-    position: absolute;
-    overflow: visible;
-    width: 122px;
-    height: 39px;
+    width: 14px;
+    height: 14px;
     left: 0px;
     top: 1px;
 }
-#Login_r {
-    left: 24px;
+#Acepto_los_trminos_y_condicion {
+    left: 19px;
     top: 0px;
     position: absolute;
     overflow: visible;
-    width: 76px;
+    width: 174px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(179,176,191,1);
+}
+#BotonSignup {
+    position: absolute;
+    width: 160px;
+    height: 36px;
+    left: 880px;
+    top: 539px;
+    overflow: visible;
+    background-color: transparent;
+}
+#rectaSignUp {
+    fill: rgba(77,196,134,1);
+}
+.rectaSignUp {
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 160px;
+    height: 39px;
+    left: 0px;
+    top: 0px;
+}
+#SignUp_r {
+    left: 32px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 98px;
     white-space: nowrap;
     text-align: left;
     font-family: Franklin Gothic;
@@ -122,16 +119,16 @@
     font-size: 31px;
     color: rgba(40,66,89,1);
 }
-#InputContra {
+#inputContraSign {
     position: absolute;
-    width: 446px;
-    height: 45px;
-    left: 737px;
-    top: 501px;
-    overflow: visible;
     padding-left: 10px;
     background-color: rgba(179,176,191,1);
     border-radius: 16px;
+    width: 446px;
+    height: 45px;
+    left: 737px;
+    top: 441px;
+    overflow: visible;
     white-space: nowrap;
     text-align: left;
     font-family: Franklin Gothic;
@@ -139,11 +136,12 @@
     font-weight: normal;
     font-size: 31px;
     color: rgba(40,66,89,1);
+    
 }
-#rectaContra {
+#Rectngulo_14 {
     fill: rgba(179,176,191,1);
 }
-.rectaContra {
+.Rectngulo_14 {
     position: absolute;
     overflow: visible;
     width: 446px;
@@ -165,12 +163,12 @@
     font-size: 31px;
     color: rgba(40,66,89,1);
 }
-#InputCorreo {
+#inputCorreoSign {
     position: absolute;
     width: 446px;
     height: 45px;
     left: 737px;
-    top: 428px;
+    top: 366px;
     overflow: visible;
     padding-left: 10px;
     background-color: rgba(179,176,191,1);
@@ -181,21 +179,13 @@
     font-style: normal;
     font-weight: normal;
     font-size: 31px;
-    color: rgba(40,66,89,1);padding-left: 10px;
-    background-color: rgba(179,176,191,1);
-    border-radius: 16px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Franklin Gothic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 31px;
     color: rgba(40,66,89,1);
 }
-#rectaCorreo {
+#Rectngulo_14_w {
     fill: rgba(179,176,191,1);
 }
-.rectaCorreo {
+.Rectngulo_14_w {
+
     position: absolute;
     overflow: visible;
     width: 446px;
@@ -217,38 +207,64 @@
     font-size: 31px;
     color: rgba(40,66,89,1);
 }
-#iconoPersona {
+#inputNombreSign {
     position: absolute;
-    width: 159px;
-    height: 159px;
-    left: 881px;
-    top: 246px;
+    width: 446px;
+    height: 45px;
+    left: 737px;
+    top: 291px;
     overflow: visible;
+    padding-left: 10px;
+    background-color: rgba(179,176,191,1);
+    border-radius: 16px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(40,66,89,1);
 }
-#Elipse_1 {
+#Rectngulo_13 {
     fill: rgba(179,176,191,1);
 }
-.Elipse_1 {
+.Rectngulo_13 {
     position: absolute;
     overflow: visible;
-    width: 159px;
-    height: 159px;
+    width: 446px;
+    height: 45px;
     left: 0px;
     top: 0px;
 }
-#Icon_ionic-md-person {
-    fill: rgba(40,66,89,1);
-}
-.Icon_ionic-md-person {
-    overflow: visible;
+#Nombre {
+    left: 26px;
+    top: 5px;
     position: absolute;
-    width: 100.023px;
-    height: 100.023px;
-    left: 29.979px;
-    top: 25.881px;
-    transform: matrix(1,0,0,1,0,0);
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(40,66,89,1);
 }
-#LogopaginaLogin {
+#nete_a_nuestra_plataforma {
+    left: 673px;
+    top: 200px;
+    position: absolute;
+    overflow: visible;
+    width: 453px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(179,176,191,1);
+}
+#LogopaginaSingup {
     position: absolute;
     width: 159.243px;
     height: 59.334px;
@@ -256,10 +272,10 @@
     top: 87.666px;
     overflow: visible;
 }
-#Icon_material-movieLogin {
+#Icon_material-movieSingup {
     fill: rgba(40,66,89,1);
 }
-.Icon_material-movieLogin {
+.Icon_material-movieSingup {
     filter: drop-shadow(-6px 0px 4px rgba(0, 0, 0, 0.161));
     overflow: visible;
     position: absolute;
@@ -269,7 +285,7 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-#MovieLogin {
+#MovieSingup {
     left: 26.243px;
     top: 7.334px;
     position: absolute;
@@ -284,7 +300,7 @@
     color: rgba(179,176,191,1);
     letter-spacing: 1.43px;
 }
-#RenterLogin {
+#RenterSingup {
     left: 80.243px;
     top: 26.334px;
     position: absolute;

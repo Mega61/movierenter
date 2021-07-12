@@ -9,7 +9,7 @@
     left: 0px;
     top: 0px;
 }
-#Logopagina {
+#LogopaginaHeader {
     position: absolute;
     width: 247px;
     height: 93px;
@@ -96,7 +96,7 @@
     left: 0px;
     top: 0px;
 }
-#Login {
+#LoginHeader {
     left: 44px;
     top: 11px;
     position: absolute;
@@ -123,7 +123,7 @@
     left: 0px;
     top: 0px;
 }
-#SignUp {
+#SignUpHeader {
     left: 33px;
     top: 11px;
     position: absolute;

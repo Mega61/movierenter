@@ -1,24 +1,26 @@
-import {LoginButton} from "./header";
+import { LoginButton } from "./header";
 import { Perfil } from "./logedHeader";
-import Carrusel from "./carrusel";
-import Promocion from "./promocion";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import { Fragment } from "react";
-import MovieComponent from "./components/MovieComponent"
-import MovieBodyComponent from "./components/MovieBodyComponent";
+import Login from './login'
+import BodyPage from "./bodyPage";
+import SignUp from "./signUp";
 
 function App() {
   return (
 
     <div id="usuariosinlogear">
-      <LoginButton />
+      <Router>
+        <LoginButton />
+        <Switch>
+          <Route path="/" exact component={BodyPage} />
+          <Route path="/login" exact component={Login} />
+          <Route path="/signUp" exact component={SignUp} />
+        </Switch>
+      </Router>
       <Perfil />
-      <Carrusel />
-      <Promocion />
-      <MovieComponent/>
-      <MovieBodyComponent/>
-      
+
+
     </div>
 
 
