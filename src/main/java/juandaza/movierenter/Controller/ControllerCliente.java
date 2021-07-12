@@ -67,8 +67,9 @@ public class ControllerCliente {
     }
 
     @PostMapping("checkoutRentar")
-    public Rentar crearRenta(@RequestBody Rentar laRenta){
-        return repoRentar.save(laRenta);
+    public Rentar crearRenta(Rentar laRenta){
+        System.out.println(laRenta.getIdCliente() + " " + laRenta.getIdPelicula() + " " + laRenta.getFechaAlquiler());
+        return repoRentar.insercionManual(laRenta.getIdCliente(), laRenta.getIdPelicula(), laRenta.getFechaAlquiler());
     }
 
     /*

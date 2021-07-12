@@ -15,7 +15,8 @@ class login extends Component {
             correo: '',
             contrasegna: '',
             users: [],
-            loggedUser: ''
+            loggedUser: '',
+            idlogged: ''
         }
 
         this.correoLogin = this.correoLogin.bind(this);
@@ -43,6 +44,7 @@ class login extends Component {
         clientService.findUsers(busqueda).then(response => {
             const {location, history} = this.props
             this.setState({ users: response.data })
+            console.log(JSON.stringify(this.state.users));
 
             if (this.state.users.length == 0) {
                 history.push('/login');
@@ -51,13 +53,14 @@ class login extends Component {
                 //let history = useHistory();
 
                 this.state.users.map(user => (
-                    this.setState({ loggedUser: user.nombre })
+                    this.setState({ loggedUser: user.nombre , idlogged: user.id})
                 ));
                 
 
-                history.push({ pathname: '/logged', state: { logged: this.state.loggedUser } });
+                history.push({ pathname: '/logged', state: { logged: this.state.loggedUser , idLogged: this.state.idlogged} });
                 //history.push({pathname: '/logged', state: {logged: this.state.loggedUser}});
                 console.log(this.state.loggedUser)
+                console.log(this.state.idlogged)
             }
 
 

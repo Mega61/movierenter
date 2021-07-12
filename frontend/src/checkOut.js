@@ -7,15 +7,21 @@ class checkOut extends Component {
 
     constructor(props) {
         super(props)
+        let dateFunction = new Date()
         this.state = {
             mAlquiladas: this.props.location.state.alquiladasM,
-            precioTotal: 0
+            precioTotal: 0,
+            date: dateFunction.getDate() + "/" + dateFunction.getMonth() + "/" + dateFunction.getFullYear(),
+            id: this.props.location.state.userID
         }
     }
 
     componentDidMount() {
         this.setState({ mAlquiladas: this.props.location.state.alquiladasM })
+
+        //this.setState({ date: dateFunction.getDate() + "/" + dateFunction.getMonth() + "/" + dateFunction.getFullYear() })
         console.log(JSON.stringify(this.state.mAlquiladas))
+        console.log(this.state.date)
 
     }
 
@@ -35,14 +41,20 @@ class checkOut extends Component {
         this.state.mAlquiladas.map(
             rent =>
                 Renta = {
-                    idCliente: this.props.location.state.loggedU,
+                    idCliente: this.state.id,
                     idPelicula: rent.idArray,
-                    fechaAlquiler: Date().tolocaleString,
+                    fechaAlquiler: this.state.date,
                     fechaDevolucion: ''
-                }
+                },
+
+            rentarService.addRenta(Renta).then(res => {
+                console.log(JSON.stringify(res));
+            })
         )
 
-        console.log(Renta);
+        this.props.history.push({ pathname: '/logged', state: { logged: this.props.location.state.loggedU } });
+
+        //console.log(Renta);
     }
 
 
@@ -66,15 +78,17 @@ class checkOut extends Component {
                         </rect>
                     </svg>
                 </div>
-                <button id="BotonSignup" onClick={this.addRentasTotales}>
-                    <svg class="rectaSignUp">
-                        <rect id="rectaSignUp" rx="16" ry="16" x="0" y="0" width="160" height="36">
-                        </rect>
-                    </svg>
-                    <div id="CheckOut_p">
-                        <span>CheckOut</span>
-                    </div>
-                </button>
+                <form>
+                    <button id="BotonSignup" onClick={this.addRentasTotales}>
+                        <svg class="rectaSignUp">
+                            <rect id="rectaSignUp" rx="16" ry="16" x="0" y="0" width="160" height="36">
+                            </rect>
+                        </svg>
+                        <div id="CheckOut_p">
+                            <span>CheckOut</span>
+                        </div>
+                    </button>
+                </form>
                 <div id="Gracias_por_alquilar_con_nosot">
                     <span>Gracias por alquilar con nosotros!!</span>
                 </div>

@@ -22,7 +22,8 @@ class LogedHeader extends Component {
         //this.props.parentCallBack(this.state.alquiladas);
         console.log(JSON.stringify(this.props.pelisAlquiladas));
         console.log(JSON.stringify(this.state.usuarioLog));
-        this.props.history.push({pathname: '/checkout', state: {alquiladasM: this.props.pelisAlquiladas, loggedU: this.props.usuarioLogeadoC}})
+        console.log(this.props.idUser);
+        this.props.history.push({pathname: '/checkout', state: {alquiladasM: this.props.pelisAlquiladas, loggedU: this.props.usuarioLogeadoC, userID: this.props.idUser}})
 
     }
 

@@ -22,18 +22,22 @@ class bodyPageLogged extends Component {
         var alquiladas = this.props.location.state.alquiladas
         var contador = this.props.location.state.contador
         var loggedconst = this.props.location.state.log
-        //console.log(logged);
+        var idlogged = this.props.location.state.idLogged
+        var idloggedconst = this.props.location.state.loggerid
+        console.log(logged);
         console.log(JSON.stringify(alquiladas));
+        console.log(idlogged)
+        console.log(idloggedconst)
         //this.props.history.push({namepath: "/checkout", state: {alquiladasP: alquiladas}})
 
 
             return(
                 <div id="usuariologeado">
-                    <LogedHeader parentCallBack = {this.callBack} usuarioLogeadoC={loggedconst} usuarioLogeado={logged} pelisAlquiladas={alquiladas} contadorP={contador} />
+                    <LogedHeader usuarioLogeadoC={loggedconst} usuarioLogeado={logged} pelisAlquiladas={alquiladas} contadorP={contador} idUser = {idloggedconst} />
                     <Carrusel />
                     <Promocion />
                     <MovieComponent />
-                    <MovieBodyComponent  usuarioLogeado={logged} />
+                    <MovieBodyComponent  usuarioLogeado={logged} idlogger = {idlogged} />
                 </div>
             )
     }

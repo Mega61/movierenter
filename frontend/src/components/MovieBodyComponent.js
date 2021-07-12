@@ -12,7 +12,8 @@ class MovieBodyComponent extends Component {
         this.state = {
             movies: [],
             moviesAlquiladas: [],
-            log: this.props.usuarioLogeado
+            log: this.props.usuarioLogeado,
+            idlog: this.props.idlogger
         }
     }
 
@@ -38,8 +39,9 @@ class MovieBodyComponent extends Component {
 
         // console.log(JSON.stringify(this.state.moviesAlquiladas));
         console.log(JSON.stringify(this.state.log));
+        console.log(this.state.idlog);
 
-        this.props.history.push({pathname: '/logged', state: {alquiladas: this.state.moviesAlquiladas, contador: this.state.moviesAlquiladas.length, log: this.state.log}})
+        this.props.history.push({pathname: '/logged', state: {alquiladas: this.state.moviesAlquiladas, contador: this.state.moviesAlquiladas.length, log: this.state.log, loggerid: this.state.idlog}})
 
     }
 
