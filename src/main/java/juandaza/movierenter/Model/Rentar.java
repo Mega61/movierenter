@@ -15,17 +15,17 @@ public class Rentar implements Serializable{
     
 
     @Id
-    @Column (name = "idCliente")
+    @Column (name = "idcliente")
     private Long idCliente;
 
     @Id
-    @Column (name = "idPelicula")
+    @Column (name = "idpelicula")
     private Long idPelicula;
 
-    @Column(name = "fechaAlquiler")
+    @Column(name = "fechaalquiler")
     private String fechaAlquiler;
 
-    @Column(name = "fechaDevolucion")
+    @Column(name = "fechadevolucion")
     private String fechaDevolucion;
 
     public Rentar(){

@@ -67,36 +67,15 @@ public class ControllerCliente {
     }
 
     @PostMapping("checkoutRentar")
-    public Rentar crearRenta(Rentar laRenta){
-        System.out.println(laRenta.getIdCliente() + " " + laRenta.getIdPelicula() + " " + laRenta.getFechaAlquiler());
-        return repoRentar.insercionManual(laRenta.getIdCliente(), laRenta.getIdPelicula(), laRenta.getFechaAlquiler());
-    }
+    public boolean crearRenta(Rentar laRenta) {
 
-    /*
-     * @PostMapping(path = "/add") public @ResponseBody String
-     * addCliente(@RequestParam String nombre, @RequestParam String correo,
-     * 
-     * @RequestParam String contrasegna) {
-     * 
-     * Cliente cliente = new Cliente();
-     * 
-     * cliente.setNombre("Juan"); cliente.setCorreo("Juan@gmail.com");
-     * cliente.setContrasegna("juan12345"); repoCliente.save(cliente);
-     * 
-     * return "Se ha guardado el cliente" + cliente.getNombre();
-     * 
-     * }
-     * 
-     * @GetMapping(path = "/all") public @ResponseBody Iterable<Cliente>
-     * getAllClientes(){ return repoCliente.findAll(); }
-     * 
-     * /*
-     * 
-     * @GetMapping public java.util.List<Cliente> getClientes() { return
-     * repoCliente.findAll(); }
-     * 
-     * @GetMapping public Cliente getCliente(@PathVariable Long id) { return
-     * repoCliente.findById(id).orElseThrow(RuntimeException::new); }
-     */
+        //repoRentar.insercionManual(laRenta.getIdCliente(), laRenta.getIdPelicula(), laRenta.getFechaAlquiler());
+        repoRentar.save(laRenta);
+
+        return true;
+
+        // return repoRentar.insercionManual(laRenta.getIdCliente(),
+        // laRenta.getIdPelicula(), laRenta.getFechaAlquiler());
+    }
 
 }

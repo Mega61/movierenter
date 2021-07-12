@@ -20,7 +20,7 @@
     top: 75px;
     overflow: visible;
 }
-#Rectngulo_12 {
+#Rectngulo_12CheckOut {
     fill: rgba(81,99,115,1);
     stroke: rgba(179,176,191,1);
     stroke-width: 5px;
@@ -29,7 +29,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectngulo_12 {
+.Rectngulo_12CheckOut {
     position: absolute;
     overflow: visible;
     width: 663px;
@@ -37,7 +37,7 @@
     left: 0px;
     top: 0px;
 }
-#Rectngulo_11 {
+#Rectngulo_11CheckOut {
     fill: rgba(40,66,89,1);
     stroke: rgba(179,176,191,1);
     stroke-width: 5px;
@@ -46,7 +46,7 @@
     stroke-miterlimit: 4;
     shape-rendering: auto;
 }
-.Rectngulo_11 {
+.Rectngulo_11CheckOut {
     position: absolute;
     overflow: visible;
     width: 663px;
@@ -54,15 +54,16 @@
     left: 0px;
     top: 98px;
 }
-#BotonSignup {
+#BotonSignupCheckOut {
     position: absolute;
     width: 160px;
     height: 36px;
     left: 880px;
     top: 996px;
     overflow: visible;
+    background-color: transparent;
 }
-#rectaSignUp {
+#rectaSignUpCheckOut {
     fill: rgba(77,196,134,1);
 }
 .rectaSignUp {
@@ -110,10 +111,10 @@
     top: 87.666px;
     overflow: visible;
 }
-#Icon_material-movie {
+#Icon_material-movieCheckOut {
     fill: rgba(40,66,89,1);
 }
-.Icon_material-movie {
+.Icon_material-movieCheckOut {
     filter: drop-shadow(-6px 0px 4px rgba(0, 0, 0, 0.161));
     overflow: visible;
     position: absolute;
@@ -123,7 +124,7 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-#Movie {
+#MovieCheckOut {
     left: 26.243px;
     top: 7.334px;
     position: absolute;
@@ -138,7 +139,7 @@
     color: rgba(179,176,191,1);
     letter-spacing: 1.43px;
 }
-#Renter {
+#RenterCheckOut {
     left: 80.243px;
     top: 26.334px;
     position: absolute;

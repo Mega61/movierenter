@@ -2,6 +2,8 @@ package juandaza.movierenter.Repository;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -13,7 +15,6 @@ import juandaza.movierenter.Model.Cliente;
 @Repository
 public interface RepoCliente extends JpaRepository<Cliente, Long> {
 
-    @Modifying
     @Query(value = "SELECT * FROM clientes c WHERE c.correo = :correo AND c.contrasegna = :contra", nativeQuery = true)
     public List<Cliente> comprobarInicioSesion(@Param("correo") String correo, @Param("contra") String contrasegna);
 }

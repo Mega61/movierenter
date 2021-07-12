@@ -10,6 +10,7 @@ class UserService {
     }
 
     addUsers(cliente) {
+        console.log(USER_REST_API_URL + "" + JSON.stringify(cliente));
 
         return axios.post(USER_REST_API_URL, cliente);
 

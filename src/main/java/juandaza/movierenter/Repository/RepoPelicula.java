@@ -10,7 +10,7 @@ import juandaza.movierenter.Model.Pelicula;
 
 @Repository
 public interface RepoPelicula extends JpaRepository<Pelicula, Long> {
-
+    
     @Query(value = "SELECT * FROM peliculas limit 4", nativeQuery = true)
     public List<Pelicula> findTopFour();
 
