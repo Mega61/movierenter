@@ -1,17 +1,23 @@
 import axios from 'axios'
 
 const USER_REST_API_URL = 'http://localhost:8080/api/users'
-const ADDUSER_REST_API_URL = 'http://localhost:8080/addUser'
+const INCUSER_REST_API_URL = 'http://localhost:8080/api/inicioSesion'
 
 class UserService {
 
-    getUsers(){
+    getUsers() {
         return axios.get(USER_REST_API_URL);
     }
 
-    addUsers(cliente){
+    addUsers(cliente) {
 
         return axios.post(USER_REST_API_URL, cliente);
+
+    }
+
+    findUsers(busqueda) {
+
+        return axios.post(INCUSER_REST_API_URL, busqueda);
 
     }
 

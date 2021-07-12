@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import juandaza.movierenter.Model.Busqueda;
 import juandaza.movierenter.Model.Cliente;
 import juandaza.movierenter.Model.Pelicula;
 import juandaza.movierenter.Repository.RepoCliente;
@@ -34,51 +35,51 @@ public class ControllerCliente {
     }
 
     @GetMapping("peliculasparciales")
-    public List<Pelicula> getFourPeliculas(){
+    public List<Pelicula> getFourPeliculas() {
         return this.repoPelicula.findTopFour();
     }
 
     @GetMapping("peliculas")
-    public List<Pelicula> getPeliculas(){
+    public List<Pelicula> getPeliculas() {
         return this.repoPelicula.findAll();
     }
 
     @GetMapping("users")
-    public List<Cliente> getClientes(){
+    public List<Cliente> getClientes() {
         return this.repoCliente.findAll();
     }
 
     @PostMapping("users")
-    public Cliente crearCliente(@RequestBody Cliente elCliente){
+    public Cliente crearCliente(@RequestBody Cliente elCliente) {
         return repoCliente.save(elCliente);
     }
 
     @PostMapping("inicioSesion")
-    public boolean iniciarSesion(@RequestBody String correo, @RequestBody String contrasegna){
-        return repoCliente.comprobarInicioSesion(correo, contrasegna);
-    }
-
-    /*@PostMapping(path = "/add")
-    public @ResponseBody String addCliente(@RequestParam String nombre, @RequestParam String correo,
-            @RequestParam String contrasegna) {
-
-        Cliente cliente = new Cliente();
-
-        cliente.setNombre("Juan");
-        cliente.setCorreo("Juan@gmail.com");
-        cliente.setContrasegna("juan12345");
-        repoCliente.save(cliente);
-
-        return "Se ha guardado el cliente" + cliente.getNombre();
-
-    }
-
-    @GetMapping(path = "/all")
-    public @ResponseBody Iterable<Cliente> getAllClientes(){
-        return repoCliente.findAll();
+    public List<Cliente> iniciarSesion(@RequestBody Busqueda laBusqueda) {
+        System.out.println(laBusqueda.getCorreo() + " " + laBusqueda.getContrasegna());
+        return repoCliente.comprobarInicioSesion(laBusqueda.getCorreo(), laBusqueda.getContrasegna());
     }
 
     /*
+     * @PostMapping(path = "/add") public @ResponseBody String
+     * addCliente(@RequestParam String nombre, @RequestParam String correo,
+     * 
+     * @RequestParam String contrasegna) {
+     * 
+     * Cliente cliente = new Cliente();
+     * 
+     * cliente.setNombre("Juan"); cliente.setCorreo("Juan@gmail.com");
+     * cliente.setContrasegna("juan12345"); repoCliente.save(cliente);
+     * 
+     * return "Se ha guardado el cliente" + cliente.getNombre();
+     * 
+     * }
+     * 
+     * @GetMapping(path = "/all") public @ResponseBody Iterable<Cliente>
+     * getAllClientes(){ return repoCliente.findAll(); }
+     * 
+     * /*
+     * 
      * @GetMapping public java.util.List<Cliente> getClientes() { return
      * repoCliente.findAll(); }
      * 

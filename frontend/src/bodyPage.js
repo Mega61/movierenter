@@ -3,16 +3,21 @@ import Carrusel from "./carrusel";
 import Promocion from "./promocion";
 import MovieComponent from "./components/MovieComponent"
 import MovieBodyComponent from "./components/MovieBodyComponent";
+import { LoginButton } from './header';
+import { withRouter } from 'react-router-dom';
 
-export default class bodyPage extends Component {
+class bodyPage extends Component {
     render() {
         return (
-            <Fragment>
+            <div id="usuariosinlogear">
+                <LoginButton />
                 <Carrusel />
                 <Promocion />
                 <MovieComponent />
                 <MovieBodyComponent />
-            </Fragment>
+            </div>
+
         )
     }
 }
+export default withRouter(bodyPage)

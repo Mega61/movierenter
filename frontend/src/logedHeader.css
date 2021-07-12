@@ -1,15 +1,15 @@
-#header {
+#headerLogged {
     fill: rgba(81,99,115,1);
 }
-.header {
+.headerLogged {
     position: absolute;
     overflow: visible;
     width: 1920px;
-    height: 100px;
+    height: 150px;
     left: 0px;
     top: 0px;
 }
-#Logopagina {
+#LogopaginaLogged {
     position: absolute;
     width: 247px;
     height: 93px;
@@ -60,7 +60,7 @@
     color: rgba(4,191,173,1);
     letter-spacing: 0.21px;
 }
-#headerusuario {
+#headerusuarioLogged {
     position: absolute;
     width: 285.505px;
     height: 52px;
@@ -68,18 +68,18 @@
     top: 26px;
     overflow: visible;
 }
-#Grupo_1 {
+#Grupo_1Logged {
     position: absolute;
     width: 45px;
     height: 45px;
     left: 171px;
-    top: 3px;
+    top: 9px;
     overflow: visible;
 }
-#Elipse_1 {
+#Elipse_1Logged {
     fill: rgba(179,176,191,1);
 }
-.Elipse_1 {
+.Elipse_1Logged {
     position: absolute;
     overflow: visible;
     width: 45px;
@@ -87,10 +87,10 @@
     left: 0px;
     top: 0px;
 }
-#Icon_ionic-md-person {
+#Icon_ionic-md-personLogged {
     fill: rgba(81,99,115,1);
 }
-.Icon_ionic-md-person {
+.Icon_ionic-md-personLogged {
     overflow: visible;
     position: absolute;
     width: 28.397px;
@@ -113,7 +113,7 @@
     font-size: 43px;
     color: rgba(179,176,191,1);
 }
-#Carritocompras {
+#CarritocomprasLogged {
     position: absolute;
     width: 53.505px;
     height: 48.672px;
@@ -121,10 +121,10 @@
     top: 3.328px;
     overflow: visible;
 }
-#Icon_awesome-shopping-cart {
+#Icon_awesome-shopping-cartLogged {
     fill: rgba(179,176,191,1);
 }
-.Icon_awesome-shopping-cart {
+.Icon_awesome-shopping-cartLogged {
     filter: drop-shadow(-5px 3px 6px rgba(0, 0, 0, 0.161));
     overflow: visible;
     position: absolute;
@@ -134,20 +134,20 @@
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-#Elipse_2 {
+#Elipse_2Logged {
     fill: rgba(179,176,191,1);
 }
-.Elipse_2 {
+.Elipse_2Logged {
     position: absolute;
     overflow: visible;
     width: 23px;
     height: 23px;
-    left: 30.505px;
-    top: 24.672px;
+    left: 40px;
+    top: 40px;
 }
 #ID1 {
-    left: 35.505px;
-    top: 23.672px;
+    left: 45px;
+    top: 35px;
     position: absolute;
     overflow: visible;
     width: 14px;

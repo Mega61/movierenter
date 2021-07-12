@@ -1,9 +1,71 @@
 import React, { Component } from 'react'
 import './login.css'
+import clientService from './services/clientService';
+import { Router } from 'react-router';
+import { useHistory, withRouter } from 'react-router-dom';
+
+class login extends Component {
 
 
-export default class login extends Component {
+
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            correo: '',
+            contrasegna: '',
+            users: [],
+            loggedUser: ''
+        }
+
+        this.correoLogin = this.correoLogin.bind(this);
+        this.contraLogin = this.contraLogin.bind(this);
+        this.LogInUsuario = this.LogInUsuario.bind(this);
+    }
+
+    correoLogin = (e) => {
+        this.setState({ correo: e.target.value });
+    }
+
+    contraLogin = (e) => {
+        this.setState({ contrasegna: e.target.value })
+    }
+
+    LogInUsuario = (e) => {
+        e.preventDefault();
+
+        
+
+        let busqueda = { correo: this.state.correo, contrasegna: this.state.contrasegna }
+
+        console.log('busqueda =>' + JSON.stringify(busqueda))
+
+        clientService.findUsers(busqueda).then(response => {
+            const {location, history} = this.props
+            this.setState({ users: response.data })
+
+            if (this.state.users.length == 0) {
+                history.push('/login');
+            } else {
+
+                //let history = useHistory();
+
+                this.state.users.map(user => (
+                    this.setState({ loggedUser: user.nombre })
+                ));
+                
+
+                history.push({ pathname: '/logged', state: { logged: this.state.loggedUser } });
+                //history.push({pathname: '/logged', state: {logged: this.state.loggedUser}});
+                console.log(this.state.loggedUser)
+            }
+
+
+        });
+    }
+
     render() {
+        
         return (
             <div id="Login">
                 <div id="ContenedorLogin">
@@ -25,7 +87,12 @@ export default class login extends Component {
                     </div>
                 </div>
                 <form>
-                    <button id="botonLogin">
+
+                    <input id="InputContra" placeholder="Contraseña" value={this.state.contrasegna} onChange={this.contraLogin} />
+
+                    <input id="InputCorreo" placeholder="Correo" value={this.state.correo} onChange={this.correoLogin} />
+
+                    <button id="botonLogin" onClick={this.LogInUsuario}>
                         <svg class="rectaLogin">
                             <rect id="rectaLogin" rx="16" ry="16" x="0" y="0" width="122" height="36">
                             </rect>
@@ -34,24 +101,7 @@ export default class login extends Component {
                             <span>Login</span>
                         </div>
                     </button>
-                    <input id="InputContra" placeholder = "Contraseña">
-                        {/* <svg class="rectaContra">
-                            <rect id="rectaContra" rx="16" ry="16" x="0" y="0" width="446" height="45">
-                            </rect>
-                        </svg>
-                        <div id="Contrasea">
-                            <span>Contraseña</span>
-                        </div> */}
-                    </input>
-                    <input id="InputCorreo" placeholder = "Correo">
-                        {/* <svg class="rectaCorreo">
-                            <rect id="rectaCorreo" rx="16" ry="16" x="0" y="0" width="446" height="45">
-                            </rect>
-                        </svg>
-                        <div id="Correo">
-                            <span>Correo</span>
-                        </div> */}
-                    </input>
+
                 </form>
                 <div id="iconoPersona">
                     <svg class="Elipse_1">
@@ -79,3 +129,4 @@ export default class login extends Component {
         )
     }
 }
+export default withRouter(login)
