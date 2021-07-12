@@ -84,7 +84,7 @@ class MovieComponent extends Component {
                                 <rect id="Rectngulo_6" rx="0" ry="0" x="0" y="0" width="292" height="40">
                                 </rect>
                             </svg>
-                            <div id="ID16000_COP">
+                            <div id="ID16000_COP_Promocion">
                                 <span>{movie.precio} COP</span>
                             </div>
                             <div id="TITANIC">

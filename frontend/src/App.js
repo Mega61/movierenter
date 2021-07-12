@@ -6,6 +6,7 @@ import Login from './login'
 import BodyPage from "./bodyPage";
 import SignUp from "./signUp";
 import BodyPageLogged from "./bodyPageLogged";
+import CheckOut from "./checkOut";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/logged" exact component={BodyPageLogged} />
           <Route path="/login" exact component={Login} />
           <Route path="/signUp" exact component={SignUp} />
+          <Route path = "/checkout" exact component = {CheckOut}/>
         </Switch>
       </Router>
     </div>

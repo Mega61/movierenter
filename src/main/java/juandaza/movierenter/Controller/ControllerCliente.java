@@ -15,8 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 import juandaza.movierenter.Model.Busqueda;
 import juandaza.movierenter.Model.Cliente;
 import juandaza.movierenter.Model.Pelicula;
+import juandaza.movierenter.Model.Rentar;
 import juandaza.movierenter.Repository.RepoCliente;
 import juandaza.movierenter.Repository.RepoPelicula;
+import juandaza.movierenter.Repository.RepoRentar;
 
 @CrossOrigin(origins = "http://localhost:3000/")
 @RestController
@@ -29,9 +31,13 @@ public class ControllerCliente {
     @Autowired
     private RepoPelicula repoPelicula;
 
-    public ControllerCliente(RepoCliente repoCliente, RepoPelicula repoPelicula) {
+    @Autowired
+    private RepoRentar repoRentar;
+
+    public ControllerCliente(RepoCliente repoCliente, RepoPelicula repoPelicula, RepoRentar repoRentar) {
         this.repoCliente = repoCliente;
         this.repoPelicula = repoPelicula;
+        this.repoRentar = repoRentar;
     }
 
     @GetMapping("peliculasparciales")
@@ -58,6 +64,11 @@ public class ControllerCliente {
     public List<Cliente> iniciarSesion(@RequestBody Busqueda laBusqueda) {
         System.out.println(laBusqueda.getCorreo() + " " + laBusqueda.getContrasegna());
         return repoCliente.comprobarInicioSesion(laBusqueda.getCorreo(), laBusqueda.getContrasegna());
+    }
+
+    @PostMapping("checkoutRentar")
+    public Rentar crearRenta(@RequestBody Rentar laRenta){
+        return repoRentar.save(laRenta);
     }
 
     /*

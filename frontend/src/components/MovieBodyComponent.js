@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import Select from 'react-select'
 import movieService from '../services/movieService'
 import './MovieBodyComponent.css'
 
-export default class MovieBodyComponent extends Component {
+class MovieBodyComponent extends Component {
 
 
     constructor(props) {
         super(props)
         this.state = {
-            movies: []
+            movies: [],
+            moviesAlquiladas: [],
+            log: this.props.usuarioLogeado
         }
     }
 
@@ -19,6 +22,24 @@ export default class MovieBodyComponent extends Component {
             this.setState({ movies: response.data })
 
         });
+
+    }
+
+    agregarAlquilada(id, titulo, precio){
+        console.log(id + " " + titulo + " " + precio);
+
+        const laPeliAlquilada = {idArray: id, tituloArray: titulo, precioArray: precio}
+
+        // console.log(JSON.stringify(laPeliAlquilada));
+
+        this.setState({
+            moviesAlquiladas: this.state.moviesAlquiladas.concat(laPeliAlquilada)
+        })
+
+        // console.log(JSON.stringify(this.state.moviesAlquiladas));
+        console.log(JSON.stringify(this.state.log));
+
+        this.props.history.push({pathname: '/logged', state: {alquiladas: this.state.moviesAlquiladas, contador: this.state.moviesAlquiladas.length, log: this.state.log}})
 
     }
 
@@ -46,7 +67,7 @@ export default class MovieBodyComponent extends Component {
                                 <rect id="Rectngulo_5_cm" rx="15" ry="15" x="0" y="0" width="122" height="30">
                                 </rect>
                             </svg>
-                            <button>
+                            <button onClick = {() => this.agregarAlquilada(movie.idPelicula, movie.titulo, movie.precio)}>
                                 <div id="ALQUILAR_cn">
                                     <span>ALQUILAR</span>
                                 </div>
@@ -69,3 +90,4 @@ export default class MovieBodyComponent extends Component {
         )
     }
 }
+export default withRouter(MovieBodyComponent)

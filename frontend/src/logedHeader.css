@@ -120,6 +120,12 @@
     left: 232px;
     top: 3.328px;
     overflow: visible;
+    background-color: transparent;
+}
+
+#CarritocomprasLogged:hover{
+    
+    filter: drop-shadow(-8px 3px 6px black);
 }
 #Icon_awesome-shopping-cartLogged {
     fill: rgba(179,176,191,1);

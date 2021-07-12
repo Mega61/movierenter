@@ -1,0 +1,245 @@
+#CheckOut {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background-color: rgba(28,47,64,1);
+    overflow: hidden;
+    --web-view-name: CheckOut;
+    --web-view-id: CheckOut;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#contenedorCheckOut {
+    position: absolute;
+    width: 653px;
+    height: 976px;
+    left: 634px;
+    top: 75px;
+    overflow: visible;
+}
+#Rectngulo_12 {
+    fill: rgba(81,99,115,1);
+    stroke: rgba(179,176,191,1);
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectngulo_12 {
+    position: absolute;
+    overflow: visible;
+    width: 663px;
+    height: 108px;
+    left: 0px;
+    top: 0px;
+}
+#Rectngulo_11 {
+    fill: rgba(40,66,89,1);
+    stroke: rgba(179,176,191,1);
+    stroke-width: 5px;
+    stroke-linejoin: round;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectngulo_11 {
+    position: absolute;
+    overflow: visible;
+    width: 663px;
+    height: 888px;
+    left: 0px;
+    top: 98px;
+}
+#BotonSignup {
+    position: absolute;
+    width: 160px;
+    height: 36px;
+    left: 880px;
+    top: 996px;
+    overflow: visible;
+}
+#rectaSignUp {
+    fill: rgba(77,196,134,1);
+}
+.rectaSignUp {
+    filter: drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 160px;
+    height: 39px;
+    left: 0px;
+    top: 0px;
+}
+#CheckOut_p {
+    left: 14px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 134px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    color: rgba(40,66,89,1);
+}
+#Gracias_por_alquilar_con_nosot {
+    left: 673px;
+    top: 178px;
+    position: absolute;
+    overflow: visible;
+    width: 553px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(179,176,191,1);
+}
+#LogopaginaCheckOut {
+    position: absolute;
+    width: 159.243px;
+    height: 59.334px;
+    left: 880.757px;
+    top: 87.666px;
+    overflow: visible;
+}
+#Icon_material-movie {
+    fill: rgba(40,66,89,1);
+}
+.Icon_material-movie {
+    filter: drop-shadow(-6px 0px 4px rgba(0, 0, 0, 0.161));
+    overflow: visible;
+    position: absolute;
+    width: 79.614px;
+    height: 66.091px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Movie {
+    left: 26.243px;
+    top: 7.334px;
+    position: absolute;
+    overflow: visible;
+    width: 120px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: rgba(179,176,191,1);
+    letter-spacing: 1.43px;
+}
+#Renter {
+    left: 80.243px;
+    top: 26.334px;
+    position: absolute;
+    overflow: visible;
+    width: 80px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Harlow Solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    color: rgba(4,191,173,1);
+    letter-spacing: 0.21px;
+}
+#Alquilada {
+    position: relative;
+    width: 568px;
+    height: 56.5px;
+    left: 673.5px;
+    top: 247px;
+    overflow: visible;
+}
+#Titulo_de_la_peli {
+    left: 39.5px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 190px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(179,176,191,1);
+}
+#ID16000_COP {
+    left: 397.5px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 148px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(179,176,191,1);
+}
+#Separador {
+    fill: transparent;
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Separador {
+    overflow: visible;
+    position: absolute;
+    width: 568px;
+    height: 1px;
+    left: 0px;
+    top: 56.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#Total {
+    position: absolute;
+    width: 228px;
+    height: 38px;
+    left: 990px;
+    top: 947px;
+    overflow: visible;
+}
+#Total_ {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 63px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(179,176,191,1);
+}
+#ID16000_COP_ {
+    left: 81px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 148px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Franklin Gothic;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    color: rgba(179,176,191,1);
+}
